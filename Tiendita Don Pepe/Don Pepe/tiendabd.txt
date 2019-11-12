@@ -1,0 +1,30 @@
+
+
+
+
+
+create database BDusuarios;
+use BDusuarios;
+-- --------------------------------------------------------
+
+
+
+CREATE TABLE `usuarios` (
+  `nombre` varchar(20) NOT NULL,
+  `apellido` varchar(20) NOT NULL,
+  `dni` varchar(20) NOT NULL,
+  `edad` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+INSERT INTO `usuarios` (`nombre`, `apellido`, `dni`, `edad`) VALUES
+('bryansito', 'piedra', '666', 23);
+
+--
+
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`dni`);
+
+
